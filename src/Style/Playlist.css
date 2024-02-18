@@ -1,0 +1,64 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.draggable {
+    background-color: #2c3e5069; 
+    color: #050505;
+    padding: 12px;
+    margin-bottom: 8px; 
+    cursor: move;
+    transition: background-color 0.3s; 
+  }
+
+  .playlist{ 
+    max-height: 515px !important;
+    overflow: auto !important;
+    display: block;
+
+  }
+  .playlist-title{
+    font-family: sans-serif;
+    background: #a29c9c;
+    color: rgb(16, 16, 17);
+    text-align: center;
+    font-size: 1.4em;
+  }
+  
+  .video-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+  }
+  
+  @media (max-width: 767px) {
+    .video-title {
+      max-width: 150px; 
+    }
+  }
+
+  .b{
+    margin-left: 8px;
+  }
+  
+  .thumbnail {
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+  }
+
+  .draggable:hover {
+    background-color: #051a2f;
+  }
+
+  .video-info {
+    padding: 10px;
+  }
+  
+  .video-title {
+    font-size: 1.2em;
+    color: #000000;
+    margin-bottom: 5px; 
+  }
